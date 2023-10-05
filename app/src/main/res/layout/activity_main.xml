@@ -40,7 +40,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="@string/good_morning"
+                    android:text="@string/good_night"
                     android:textSize="20sp"
                     android:fontFamily="@font/poppinsmedium"/>
                 <TextView
@@ -49,7 +49,7 @@
                     android:text="@string/flora_shafiqa"
                     android:textSize="16sp"
                     android:textColor="@color/grey"
-                    android:fontFamily="@font/poppinsmedium"/>
+                    />
 
             </LinearLayout>
 
@@ -110,6 +110,18 @@
             android:fontFamily="@font/poppinsmedium"
             android:layout_marginStart="20dp"
             android:layout_marginTop="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+                <include layout="@layout/fragment_recently_played"/>
+                <include layout="@layout/fragment_recently_played"/>
+                <include layout="@layout/fragment_recently_played"/>
+                <include layout="@layout/fragment_recently_played"/>
+
+            </LinearLayout>
 
 
     </LinearLayout>

@@ -1,10 +1,13 @@
 <resources>
     <string name="app_name">Music App</string>
     <string name="good_morning">Good Morning</string>
+    <string name="good_night">Good Night</string>
     <string name="flora_shafiqa">Flora Shafiqa</string>
     <string name="person">Person</string>
     <string name="profile_picture">Profile Picture</string>
     <string name="listen_the_latest_musics">Listen The Latest Musics</string>
     <string name="search">Search Music</string>
     <string name="recently_played">Recently Played</string>
+    <string name="album_image">Album Image</string>
+    <string name="pajama_drive">Pajama Drive</string>
 </resources>
