@@ -14,5 +14,6 @@
         <!-- Customize your theme here. -->
         <item name="backgroundColor">@color/purple_dark_blue</item>
         <item name="android:textColor">@color/white</item>
+        <item name="android:fontFamily">@font/poppinsregular</item>
     </style>
 </resources>
