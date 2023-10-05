@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Music App</string>
+    <string name="good_morning">Good Morning</string>
+    <string name="flora_shafiqa">Flora Shafiqa</string>
+    <string name="person">Person</string>
+    <string name="profile_picture">Profile Picture</string>
 </resources>
