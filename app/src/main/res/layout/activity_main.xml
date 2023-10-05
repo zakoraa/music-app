@@ -1,70 +1,76 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:background="@color/purple_dark_blue"
     tools:context=".MainActivity">
 
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    >
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fitsSystemWindows="true"
+        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"
-        android:orientation="horizontal"
-        android:layout_marginHorizontal="20dp">
+        android:fitsSystemWindows="true"
+        android:orientation="horizontal">
+
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            >
+            android:orientation="horizontal">
+
             <androidx.cardview.widget.CardView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:cardCornerRadius="65dp"
-                >
+                app:cardCornerRadius="65dp">
+
                 <ImageView
                     android:layout_width="65dp"
                     android:layout_height="65dp"
-                    android:src="@drawable/flora_shafiq"
-                    android:contentDescription="@string/profile_picture"/>
+                    android:contentDescription="@string/profile_picture"
+                    android:src="@drawable/flora_shafiq" />
             </androidx.cardview.widget.CardView>
+
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="vertical"
                 android:layout_marginStart="10dp"
-                >
+                android:orientation="vertical">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppinsmedium"
                     android:text="@string/good_night"
-                    android:textSize="20sp"
-                    android:fontFamily="@font/poppinsmedium"/>
+                    android:textSize="20sp" />
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="@string/flora_shafiqa"
-                    android:textSize="16sp"
                     android:textColor="@color/grey"
-                    />
+                    android:textSize="16sp" />
 
             </LinearLayout>
 
             <View
                 android:layout_width="0dp"
                 android:layout_height="0dp"
-                android:layout_weight="1"
-                />
+                android:layout_weight="1" />
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/ic_baseline_person_24"
                 android:layout_gravity="center_vertical"
                 android:contentDescription="@string/person"
-                />
+                android:src="@drawable/ic_baseline_person_24" />
 
         </LinearLayout>
     </LinearLayout>
@@ -72,58 +78,86 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
         android:layout_marginHorizontal="20dp"
+        android:layout_marginTop="30dp"
         android:orientation="horizontal">
+
         <TextView
             android:layout_width="200dp"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/poppinsmedium"
             android:text="@string/listen_the_latest_musics"
-            android:textSize="25sp"
-            android:fontFamily="@font/poppinsmedium"/>
+            android:textSize="25sp" />
+
         <View
             android:layout_width="0dp"
             android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_weight="1" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/search"
             android:layout_gravity="center_vertical"
-            android:textSize="16sp"
+            android:drawablePadding="10dp"
+            android:text="@string/search"
             android:textColor="@color/grey"
-            app:drawableStartCompat="@drawable/ic_baseline_search_24"
-            android:drawablePadding="10dp"/>
+            android:textSize="16sp"
+            app:drawableStartCompat="@drawable/ic_baseline_search_24" />
 
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/poppinsmedium"
+            android:text="@string/recently_played"
+            android:textSize="20sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <include layout="@layout/fragment_recently_played" />
+
+            <include layout="@layout/fragment_recently_played" />
+
+            <include layout="@layout/fragment_recently_played" />
+
+            <include layout="@layout/fragment_recently_played" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="20dp"
         android:orientation="vertical"
+        android:layout_marginTop="20dp"
         >
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/recently_played"
-            android:textSize="18sp"
             android:fontFamily="@font/poppinsmedium"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-                <include layout="@layout/fragment_recently_played"/>
-                <include layout="@layout/fragment_recently_played"/>
-                <include layout="@layout/fragment_recently_played"/>
-                <include layout="@layout/fragment_recently_played"/>
-
-            </LinearLayout>
-
+            android:text="@string/recommended_for_you"
+            android:textSize="20sp"
+            android:layout_marginBottom="10dp"/>
+        <include layout="@layout/fragment_recommended_for_you"/>
+        <include layout="@layout/fragment_recommended_for_you"/>
+        <include layout="@layout/fragment_recommended_for_you"/>
+        <include layout="@layout/fragment_recommended_for_you"/>
 
     </LinearLayout>
 
 </LinearLayout>
+</ScrollView>

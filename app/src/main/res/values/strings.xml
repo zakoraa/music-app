@@ -10,4 +10,7 @@
     <string name="recently_played">Recently Played</string>
     <string name="album_image">Album Image</string>
     <string name="pajama_drive">Pajama Drive</string>
+    <string name="recommended_for_you">Recommended For You</string>
+    <string name="jkt_48">JKT 48</string>
+    <string name="_10m_streams">10M/streams</string>
 </resources>
