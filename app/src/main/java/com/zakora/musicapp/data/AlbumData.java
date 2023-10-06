@@ -31,7 +31,7 @@ public class AlbumData {
         }});
         add(new HashMap<String, Object>() {{
             put("title", "Bcos U Will Never B Free");
-            put("image", R.drawable.pajama_drive);
+            put("image", R.drawable.bcos_u);
         }});
     }};
 }
